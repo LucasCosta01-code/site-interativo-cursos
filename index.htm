@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="src/img/Logo.png" height="55"> Lucas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#courses">Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="hero">
+            <h1>Aprenda <span class="highlight">Programação</span> sem Dificuldade</h1>
+            <p>Aprenda a codificar passo a passo e transforme ideias em linhas de código.</p>
+            <button class="btn btn-primary">Saiba Mais</button>
+        </div>
+    </main>
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa dedicada a fornecer as melhores soluções para nossos clientes. Nossa equipe é composta por especialistas em diversas áreas, prontos para enfrentar qualquer desafio.</p>
+        <img src="./src/img/b.png" alt="Nossa equipe">
+    </section>
+    <section id="courses">
+        <h2>Nossos Cursos</h2>
+        <p>Explore nossos cursos e encontre o que melhor se adapta às suas necessidades.</p>
+        <div class="course-list">
+            <div class="course-item" style="background-image: url('./src/img/f.png');">
+                <div class="course-content">
+                    <h3>Introdução ao Hardware Hacking</h3>
+                    <p>Desmistifique o Universo do Hardware Hacking com um conteúdo completo totalmente em português.</p>
+                    <button class="btn btn-secondary">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contate-Nos</h2>
+        <p>Entre em contato conosco para mais informações ou para agendar uma reunião.</p>
+        <form id="contactForm" action="process_form.php" method="post">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 MS-Codex Computação. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./src/script/scripts.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>
